@@ -36,29 +36,26 @@ clf.fit(features_train,labels_train)
 pred=clf.predict(features_test)
 pred2=[0.0]*len(labels_test)
 import sklearn
-accuracy=sklearn.metrics.accuracy_score(pred,labels_test)
-print "accuracy:\t",accuracy
-
-recall=sklearn.metrics.recall_score(labels_test,pred)
-precision=sklearn.metrics.precision_score(labels_test,pred)
-print "recall:\t",recall
-print "precision:\t",precision
+accuracy=sklearn.metrics.accuracy_score(pred2,labels_test)
+print accuracy
 
 poi_test=0
 for num in labels_test:
     if num==1.0:
         poi_test+=1
 
+
 poi_pred=0
 for num in pred:
     if num==1.0:
         poi_pred+=1
 
-#print "How many POIs are predicted for the test set? \t"
-#print "# of POIs in labels_test: \t",poi_test
-#print "# of POIs in prediction: \t",poi_pred
 
-#print "How many people in total are in the test set?\t",len(labels_test)
+print "How many POIs are predicted for the test set? \t"
+print "# of POIs in labels_test: \t",poi_test
+print "# of POIs in prediction: \t",poi_pred
 
-#print "labels_test:\t",labels_test
-#print "pred:\t",pred
+print "How many people in total are in the test set?\t",len(labels_test)
+
+print "labels_test:\t",labels_test
+print "pred:\t",pred

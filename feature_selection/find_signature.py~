@@ -41,10 +41,10 @@ labels_train   = labels_train[:150]
 from sklearn import tree
 clf=tree.DecisionTreeClassifier()
 clf.fit(features_train,labels_train)
-pred=clf.predict(features_test)
+pred=clf.predict(features_train)
 print "pred=",pred
 import sklearn
-accuracy=sklearn.metrics.accuracy_score(pred,labels_test)
+accuracy=sklearn.metrics.accuracy_score(pred,labels_train)
 print "accuracy:\t",accuracy
 
 #print importance>0.2 and its index

@@ -19,7 +19,7 @@ def outlierCleaner(predictions, ages, net_worths):
     cleaned_data=zip(ages,net_worths,errors)
     
     k=int(0.1*len(ages))
-    cleaned_data=sorted(cleaned_data,key=lambda x: x[2],reverse=True)
+    cleaned_data=sorted(cleaned_data,key=lambda x: x[2][0],reverse=True)
     
     return cleaned_data[k:]
 

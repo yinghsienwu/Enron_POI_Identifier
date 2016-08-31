@@ -1,0 +1,9 @@
+accuracy
+Q.can we beat 93.6?
+GaussianNB=0.884
+SVC=0.92
+DecisionTreeClassifier=0.912
+KNN=0.92
+AdaBoostClassifier=0.924 (n_estimators)
+RandomForestClassifier=0.924
+RandomForestClassifier=0.94 (n_estimators=8,min_samples_split=1)

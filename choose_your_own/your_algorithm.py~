@@ -32,7 +32,7 @@ plt.show()
 ### visualization code (prettyPicture) to show you the decision boundary
 
 #K nearest neighbors
-from sklearn import svm
+from sklearn import ensemble
 #clf=sklearn.neighbors.KNeighborsClassifier()
 #clf=naive_bayes.GaussianNB()
 clf=svm.SVC(kernel='rbf',C=1000)

@@ -26,7 +26,7 @@ enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r")
 #print enron_data['SKILLING JEFFREY K']
 #print type(enron_data)
 
-print "How many POIs are in the dataset?"
+#print "How many POIs are in the dataset?"
 count=0
 for name in enron_data:
     if enron_data[name]['poi']==False:
